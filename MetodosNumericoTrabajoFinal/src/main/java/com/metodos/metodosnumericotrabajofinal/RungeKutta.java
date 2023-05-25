@@ -12,14 +12,14 @@ import org.knowm.xchart.QuickChart;
 import org.knowm.xchart.SwingWrapper;
 import org.knowm.xchart.XYChart;
 
-public class RungeKuttaSolver {
+public class RungeKutta {
 
     private List<Double> valoresX;
     private List<Double> valoresY;
     private List<Double> valoresY1;
     private int cont;
 
-    public RungeKuttaSolver() {
+    public RungeKutta() {
         valoresX = new ArrayList<>();
         valoresY = new ArrayList<>();
         valoresY1 = new ArrayList<>();
@@ -109,7 +109,7 @@ public class RungeKuttaSolver {
         double x = 2; // Valor de x para el cual queremos obtener y
 
         // Aplicamos el método de Runge-Kutta de cuarto orden
-        RungeKuttaSolver rs = new RungeKuttaSolver();
+        RungeKutta rs = new RungeKutta();
         double y = rs.runKutta4(funcion, x0, y0, h, x);
 
         // Imprimimos el resultado
