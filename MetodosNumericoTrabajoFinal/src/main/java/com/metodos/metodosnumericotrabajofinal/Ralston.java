@@ -12,14 +12,14 @@ import org.knowm.xchart.QuickChart;
 import org.knowm.xchart.SwingWrapper;
 import org.knowm.xchart.XYChart;
 
-public class Ralston2 {
+public class Ralston {
 
     private List<Double> valoresX;
     private List<Double> valoresY;
     private List<Double> valoresY1;
     private int cont;
 
-    public Ralston2() {
+    public Ralston() {
         valoresX = new ArrayList<>();
         valoresY = new ArrayList<>();
         valoresY1 = new ArrayList<>();
@@ -122,7 +122,7 @@ public class Ralston2 {
         double x = 4; // Valor de x para el cual queremos obtener y
 
         // Aplicamos el método de Ralston
-        Ralston2 rs = new Ralston2();
+        Ralston rs = new Ralston();
         double y = rs.runRalston(funcion, x0, y0, h, x);
 
         // Imprimimos el resultado
