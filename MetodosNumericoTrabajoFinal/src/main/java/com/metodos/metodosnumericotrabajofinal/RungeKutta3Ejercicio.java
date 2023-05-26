@@ -66,13 +66,12 @@ public class RungeKutta3Ejercicio {
             System.out.println("k4 = " + k4);
 
             yn_1 = new BigDecimal(yn + ((k1 + 2 * k2 + 2 * k3 + k4) * (h)) / 6);
-            xn = xn.add(BigDecimal.valueOf(h));
             
             valoresY.add(yn); 
             valoresY1.add(yn_1.doubleValue()); 
             valoresX.add(xn.doubleValue());
             
-            
+            xn = xn.add(BigDecimal.valueOf(h));
             
             yn = yn_1.doubleValue();
             cont++;
