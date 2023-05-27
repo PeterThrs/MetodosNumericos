@@ -12,7 +12,7 @@ public class Euler {
         double x = a;
         double y = initialY; // Valor inicial de la integral
 
-        System.out.println("Iteración\t|x\t\t|y\t\t\t|y Verdadero\t|Error relativo (%)");
+        System.out.println("Iteración\t|x\t|y\t|y Verdadero\t|Error relativo (%)");
         System.out.println("------------------------------------------------------------");
 
         for (int i = 0; i < n; i++) {

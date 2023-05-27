@@ -1,5 +1,8 @@
-com\metodos\metodosnumericotrabajofinal\RungeKutta$DifferentialEquation.class
 com\metodos\metodosnumericotrabajofinal\Euler.class
 com\metodos\metodosnumericotrabajofinal\Ralston$DifferentialEquation.class
 com\metodos\metodosnumericotrabajofinal\RungeKutta.class
+com\metodos\metodosnumericotrabajofinal\RungeKutta$DifferentialEquation.class
+com\metodos\metodosnumericotrabajofinal\MetodoHeun.class
+com\metodos\metodosnumericotrabajofinal\RungeKutta3Ejercicio.class
 com\metodos\metodosnumericotrabajofinal\Ralston.class
+com\metodos\metodosnumericotrabajofinal\RungeKutta3Ejercicio$DifferentialEquation.class

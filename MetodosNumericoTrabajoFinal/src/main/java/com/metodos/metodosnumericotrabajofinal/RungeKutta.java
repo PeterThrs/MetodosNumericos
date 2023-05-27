@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Project/Maven2/JavaApp/src/main/java/${packagePath}/${mainClassName}.java to edit this template
- */
 package com.metodos.metodosnumericotrabajofinal;
 
 import java.math.BigDecimal;
@@ -98,24 +94,24 @@ public class RungeKutta {
     public static void main(String[] args) {
 
         
-          Function<DifferentialEquation, Double> funcion = equation -> equation.x * Math.sqrt(equation.y);
+        //Function<DifferentialEquation, Double> funcion = equation -> (1+(4*equation.x)) * Math.sqrt(equation.y);
         //Function<RungeKutta.DifferentialEquation, Double> funcion = equation -> -2 * Math.pow(equation.x, 3) + 12 * Math.pow(equation.x, 2) - 20 * equation.x + 8.5; 
         //Function<DifferentialEquation, Double> funcion = equation -> Math.pow(equation.x, 2) + Math.pow(equation.y, 2); 
-        //Function<DifferentialEquation, Double> funcion = equation -> equation.y * Math.pow(equation.x, 3) - 1.1 * equation.y;
+        Function<DifferentialEquation, Double> funcion = equation -> equation.y * Math.pow(equation.x, 3) - 1.1 * equation.y;
         //Function<DifferentialEquation, Double> funcion = equation -> -2 * Math.pow(equation.x, 3) + 12 * Math.pow(equation.x, 2) - 20 * equation.x + 8.5;
         //Function<DifferentialEquation, Double> funcion = equation -> -4 * Math.exp(0.8 * equation.x) - 0.5 * equation.y;
         //es funcional el metodo segun este
         //Function<DifferentialEquation, Double> funcion = equation -> Math.pow(Math.E, Math.pow(equation.x, 2));
         
         // Definimos las condiciones iniciales
-        double x0 = 1; // Valor inicial de x
-        double y0 = 4; // Valor inicial de y
+        double x0 = 0; // Valor inicial de x
+        double y0 = 1; // Valor inicial de y
 
         // Definimos el tamaño del paso
-        double h = 0.2; // Tamaño del paso
+        double h = 0.5; // Tamaño del paso
 
         // Definimos el valor de x para el cual queremos obtener el valor de y
-        double x = 1.6; // Valor de x para el cual queremos obtener y
+        double x = 2; // Valor de x para el cual queremos obtener y
 
         // Aplicamos el método de Runge-Kutta de cuarto orden
         RungeKutta rs = new RungeKutta();

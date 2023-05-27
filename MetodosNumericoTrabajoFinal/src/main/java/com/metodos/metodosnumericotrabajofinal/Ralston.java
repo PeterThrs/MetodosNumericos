@@ -103,9 +103,9 @@ public class Ralston {
     public static void main(String[] args) {
 
         //Function<DifferentialEquation, Double> funcion = equation -> equation.x * Math.sqrt(equation.y);
-        Function<DifferentialEquation, Double> funcion = equation -> -2 * Math.pow(equation.x, 3) + 12 * Math.pow(equation.x, 2) - 20 * equation.x + 8.5; 
+        //Function<DifferentialEquation, Double> funcion = equation -> -2 * Math.pow(equation.x, 3) + 12 * Math.pow(equation.x, 2) - 20 * equation.x + 8.5; 
         //Function<DifferentialEquation, Double> funcion = equation -> Math.pow(equation.x, 2) + Math.pow(equation.y, 2); 
-        //Function<DifferentialEquation, Double> funcion = equation -> equation.y * Math.pow(equation.x, 3) - 1.1 * equation.y;
+        Function<DifferentialEquation, Double> funcion = equation -> (1+(4*equation.x)) * Math.sqrt(equation.y);
         //Function<DifferentialEquation, Double> funcion = equation -> -2 * Math.pow(equation.x, 3) + 12 * Math.pow(equation.x, 2) - 20 * equation.x + 8.5;
         //Function<DifferentialEquation, Double> funcion = equation -> -4 * Math.exp(0.8 * equation.x) - 0.5 * equation.y;
         //es funcional el metodo segun este
@@ -116,10 +116,10 @@ public class Ralston {
         double y0 = 1; // Valor inicial de y
 
         // Definimos el tamaño del paso
-        double h = 0.5; // Tamaño del paso
+        double h = 0.25; // Tamaño del paso
 
         // Definimos el valor de x para el cual queremos obtener el valor de y
-        double x = 4; // Valor de x para el cual queremos obtener y
+        double x = 1; // Valor de x para el cual queremos obtener y
 
         // Aplicamos el método de Ralston
         Ralston rs = new Ralston();
